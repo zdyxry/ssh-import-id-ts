@@ -1,0 +1,38 @@
+{
+  "name": "ssh-import-id-ts",
+  "version": "1.0.0",
+  "description": "Authorize SSH public keys from trusted online identities (TypeScript version)",
+  "main": "dist/cli.js",
+  "bin": {
+    "ssh-import-id": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "node dist/cli.js",
+    "dev": "npm run build && npm start",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdyxry/ssh-import-id-ts.git"
+  },
+  "keywords": [
+    "ssh",
+    "cli",
+    "devops",
+    "github",
+    "launchpad"
+  ],
+  "author": "zdyxry",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/yargs": "^17.0.29",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  }
+}

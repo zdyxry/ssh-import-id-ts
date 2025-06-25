@@ -1,0 +1,6 @@
+# .npmignore
+/node_modules
+/src
+tsconfig.json
+.DS_Store
+*.log
